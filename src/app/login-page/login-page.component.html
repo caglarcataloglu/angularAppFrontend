@@ -11,7 +11,7 @@
                         <div class="col-lg-10 col-xl-7 mx-auto">
                             <h3 class="display-4">Login into the system!</h3>
                             <p class="text-muted mb-4"></p>
-                            <form >
+                            <form (ngSubmit)="onSubmit()" >
                                 <div class="form-group mb-3">
                                     <input id="inputEmail" type="email" placeholder="Email address" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
                                 </div>
@@ -22,12 +22,7 @@
                                     <input id="customCheck1" type="checkbox" checked class="custom-control-input">
                                     <label for="customCheck1" class="custom-control-label">Remember password</label>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm" (click)="onSubmit()">Sign in</button>
-
-                                        <div>
-                                          <a routerLink="welcome-page"> mocked welcome-page </a>
-                                        </div>
-                                        <router-outlet></router-outlet>
+                                <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm" >Sign in</button>
                             </form>
                         </div>
                     </div>
