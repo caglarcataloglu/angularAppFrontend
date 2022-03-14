@@ -1,5 +1,5 @@
 //added by caglar
-export interface MyUserInterface
-    { username: string; 
-     password: string; 
-     }; 
+export class UserInfo{
+    user:string="";
+    id:string="";
+}
